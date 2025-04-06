@@ -1,0 +1,36 @@
+@import url('leaflet/dist/leaflet.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* index.css */
+.marker-cluster-small {
+  background-color: rgba(181, 226, 140, 0.6);
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.marker-cluster-medium {
+  background-color: rgba(241, 211, 87, 0.6);
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.marker-cluster-large {
+  background-color: rgba(253, 156, 115, 0.6);
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
