@@ -330,7 +330,11 @@ function App() {
 </div>
 
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 bg-white border-b border-gray-200 px-2 sm:px-4 py-1 z-10">
+      <header className="fixed top-0 left-0 right-0 bg-white border-b border-gray-200 px-2 sm:px-4 py-1 z-10"
+      style={{
+        zIndex: 1000,
+      }}
+        >
         {showHeader ? (
           <div className="flex justify-between items-center h-14 sm:h-16">
             {/* Logo in center for mobile, left side for desktop */}
