@@ -170,7 +170,7 @@ function App() {
     },
     {
       id: 6,
-      img: "/src/assets/images/activities/hammock.jpg",
+      img: "https://cdn.prod.rexby.com/image/d80440c7-36f3-49f7-b69b-b390f0cf7b8f",
       icon: <Mountain size={16} />,
       category: "Hike",
       title: "Mountain top experience",
@@ -253,7 +253,7 @@ function App() {
     },
     {
       id: 6,
-      img: "/src/assets/images/activities/hammock.jpg",
+      img: "https://cdn.prod.rexby.com/image/d80440c7-36f3-49f7-b69b-b390f0cf7b8f",
       icon: <Mountain size={16} />,
       category: "Hike",
       title: "Mountain top experience",
@@ -436,7 +436,7 @@ function App() {
             <div className="w-full lg:w-1/3 lg:pr-8 mb-4 sm:mb-6 lg:mb-0 px-4 sm:px-8 lg:pl-12 flex justify-center lg:justify-start">
               <div className="relative rounded-lg overflow-hidden group max-w-xs">
                 <img
-                  src="/src/assets/images/norway.jpg"
+                  src="https://cdn.prod.rexby.com/image/d80440c7-36f3-49f7-b69b-b390f0cf7b8f"
                   alt="Person in hammock with mountains view"
                   className="rounded-[12px] object-cover  sm:h-80 md:h-96 w-full sm:w-[320px] transition duration-300 group-hover:scale-105"
                 />
