@@ -17,6 +17,7 @@ import { Car, Utensils, Mountain, ArrowLeft, ArrowRight } from "lucide-react";
 import { Globe, Instagram, Twitter } from "lucide-react";
 import { ChevronUp, ChevronDown } from "lucide-react";
 import { ChevronLeft, Menu, X } from "lucide-react";
+import {LoginSignup} from "./components/LoginSignup";
 
 function App() {
   const [showScrollToTop, setShowScrollToTop] = useState(false);
@@ -25,6 +26,7 @@ function App() {
   const [startIndex, setStartIndex] = useState(0);
   const [endIndex, setEndIndex] = useState(3);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [open,setOpen] = useState(false);
 
   // Refs for each section to enable smooth scrolling
   const homeRef = useRef(null);
@@ -320,6 +322,10 @@ function App() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleLoginClick = () => {
+    setOpen(true);
+  }
+
   return (
     <div className="font-sans min-h-screen bg-white">
 
@@ -353,7 +359,9 @@ function App() {
 
             {/* Right side with login and language buttons */}
             <div className="flex items-center space-x-1 sm:space-x-2">
-              <button className="relative flex items-center justify-center rounded-lg font-poppins focus:outline-none tracking-wider pointer-events-auto font-semibold text-title border border-[#D6D8E7] h-8 sm:h-9 px-2 sm:px-6 text-xs sm:text-sm">
+              <button className="relative flex items-center justify-center rounded-lg font-poppins focus:outline-none tracking-wider pointer-events-auto font-semibold text-title border border-[#D6D8E7] h-8 sm:h-9 px-2 sm:px-6 text-xs sm:text-sm"
+              onClick={handleLoginClick}
+              >
                 Log in
               </button>
 
@@ -1045,6 +1053,10 @@ function App() {
           <ArrowUpward className="text-gray-700" />
         </button>
       )}
+
+      <LoginSignup open={open} setOpen={setOpen} />
+
+
     </div>
   );
 }
